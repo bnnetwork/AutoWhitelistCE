@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "AutoWhitelistCE",
+  "version": "${version}",
+  "name": "AutoWhitelistCE",
+  "description": "A simple whitelist plugin",
+  "authors": [
+    "BN_Network"
+  ],
+  "contact": {
+    "website": "https://help.awl.bnnet.com.cn/",
+    "repo": "https://github.com/bnnetwork/AutoWhitelistCE"
+  },
+  "license": "MIT",
+  "icon": "assets/AutoWhitelistCE/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.bnnetwork.awce.Main"
+    ],
+    "client": [
+      "org.bnnetwork.awce.client.Main"
+    ]
+  },
+  "mixins": [
+    "AutoWhitelistCE.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
